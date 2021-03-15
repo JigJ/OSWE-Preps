@@ -1,0 +1,15 @@
+Basic commands
+
+> git init          // initialize local git repo
+> git add <file>    // Add file(s) to index
+> git status        // Check Status of working tree
+> git commit        // Commit changes to index
+> git push          // Push to remote repo
+> git pull          // Pull latest from Remote repo
+> git clone         // Clone repo to a new directory
+> git branch <branch_name> // Creating a branch
+> git checkout <branch_name> // Switch to branch
+> git merge <branch_name>    // Merge the branch to master
+> git remote add <variable> <repo_url>  // Add a remote repository into a varible on System 
+> git remote        // To show all remote repo url variables
+> git push -u origin master  
