@@ -1,0 +1,10 @@
+# Youtube video
+https://www.youtube.com/playlist?list=PLillGF-Rfqbap2IB6ZS4BBBcYPagAjpjn
+
+On Websites:
+
+Use if you want to halt the php loading if the condition doesn't satisfy
+<? php require 'include/header.php ?>
+
+Use if you want to continue the php loading regardless of the file be present or not
+<? php require 'include/header.php ?>
