@@ -1,0 +1,66 @@
+Nodejs refresher => Traversy Media
+
+13th March:
+=============================================
+Javascript Runtime
+Built on Google v8 engine
+
+PreReq:
+
+* HTTP
+* Json
+* Arrow Function
+* Promises
+* MVC Pattern
+
+Why Node:
+
+* Fast, efficient
+* Event driven, non-blocking
+* Same Language Front end and back end
+
+==============================================
+npm init --> Would initialize the node project by creating package.json file
+npm install <package_name> --> Would install modules
+npm install -D <package_name> --> Would save dev dependencies
+npm install --> This would install all modules listed in package.json file
+
+For migration no need to move node_modules folder, simply use package.json 
+
+==============================================
+Run .js file using:
+> node index.js
+
+==============================================
+You can get __dirname and __filename of the exported module, coz:
+// Module Wrapper Function:
+// (function (exports, require, module, __filename, __drirname){
+//    
+//  })
+
+==============================================
+Most of the time when  you have an instance of a class/ initiate an object in Js
+You would have a call back function
+
+For example in FileSystem let say you want to make a directory
+
+const fs = require('fs');
+
+fs.mkdir(path.join(__dirname,'/test'), {}, (err)=>{});
+fs.mkdir(<path>, <filename or any argument>, <callback function>)
+
+Callback Function all of the following do the same thing:
+
+++++++++++++++++++
+function(){}
+() => {}
+
+++++++++++++++++++
+function(data){console.log(data)}
+data => {console.log(data)}
+
+++++++++++++++++++
+function(data,msg){console.log(data,msg)}
+(data,msg) => {console.log(data,msg)}
+
+==============================================
