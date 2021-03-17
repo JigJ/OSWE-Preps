@@ -1,0 +1,35 @@
+# Youtube video
+https://www.youtube.com/playlist?list=PLillGF-Rfqbap2IB6ZS4BBBcYPagAjpjn
+
+On Websites:
+
+Use if you want to halt the php loading if the condition doesn't satisfy
+<? php require 'include/header.php ?>
+
+Use if you want to continue the php loading regardless of the file be present or not
+<? php require 'include/header.php ?>
+
+
+# There is some print functions to be remembered:
+
+1. print_r()    // This would dump contents of array
+2. var_dump()   // This would also dump contents of the variable/array
+
+# Sessions  // Data Stored on Server back end
+To start a session on your project mention:
+>  session_start();
+>  $_SESSION['name'] = 'Anything you want'  // This would be preserved for the session initiated
+>  unset($_SESSION['$name']); // If want to unset a variable in a session;
+>  session_destroy();  // If you want to destroy the whole session;
+
+#Cookies   // Data Stored on Client browser
+
+setcookie("cookie_name","cookie_value","expirationtime");
+>  setcookie('username',$username, time()+3600);
+// 1 hour
+> $_COOKIE['cookie_name']  // Utilizing the cookie
+// Delete Cookie: Set time in past 
+>  setcookie('username',$username, time()-3600);
+
+
+
